@@ -1,0 +1,159 @@
+/*_____________________________________________________________layout_____________________________________________________________________________________*/
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    gap: 5px 5px;
+    grid-template-areas:
+        "header header header asideR"
+        "asideL main main asideR"
+        "asideL main main asideR"
+        "asideL footer footer footer";
+}
+
+/* header {
+    height: 5em;
+    
+} */
+
+#asideL,
+#asideR,
+#header,
+#aside,
+#main,
+#footer {
+    border: 2px solid black;
+}
+
+#header {
+    grid-area: header;
+    overflow: hidden;
+    transition: 2.5s ease forwards;
+}
+
+#asideL {
+
+    grid-area: asideL;
+    overflow: hidden;
+    transition: 2.5s ease forwards;
+}
+
+#main {
+    display: flex;
+    grid-area: main;
+    overflow: hidden;
+    transition: 2.5s ease forwards;
+}
+
+#asideR {
+    grid-area: asideR;
+    overflow: hidden;
+    transition: 2.5s ease forwards;
+}
+
+#footer {
+    grid-area: footer;
+    overflow: hidden;
+    transition: 2.5s ease forwards;
+}
+
+/*_____________________________________________________________img property_____________________________________________________________________________________*/
+
+#header img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+}
+
+#asideL img {
+    width: auto;
+    height: 100%;
+    transition: transform 1s;
+}
+
+#main img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+}
+
+#asideR img {
+    width: auto;
+    height: 100%;
+    transition: transform 1s;
+}
+
+#footer img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+}
+
+/*_____________________________________________________________hover property_____________________________________________________________________________________*/
+
+#header:hover {
+    height: 750px;
+    z-index: 1;
+}
+
+#asideL:hover {
+    width: 1000px;
+    z-index: 1;
+}
+
+#main:hover {
+    width: 1000px;
+    height: 750px;
+    z-index: 1;
+}
+
+#asideR:hover {
+    width: 800px;
+    z-index: 1;
+}
+
+#footer:hover {
+    height: 800px;
+    z-index: 1;
+}
+
+/*_____________________________________________________________hover img property_____________________________________________________________________________________*/
+
+#header img:hover {
+    transform: scale(1.4) translateY(-100px);
+    height: 1000px;
+    z-index: 1;
+}
+
+#asideL img:hover {
+    transform: scale(1.4) translateX(50px) translateY(-25px);
+    z-index: 1;
+}
+
+#main img:hover {
+    transform: scale(1.4) translateY(-100px);
+}
+
+#asideR img:hover {
+    transform: scale(1.4) translateX(-50px) translateY(75px);
+    z-index: 1;
+}
+
+#footer img:hover {
+    transform: scale(1.4);
+    transform: translateY(-75px);
+    height: 1000px;
+    z-index: 1;
+}
