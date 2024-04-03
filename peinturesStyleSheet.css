@@ -218,12 +218,11 @@ li:hover {
 }
 
 #main img:hover {
-    transform: scale(1.4) translateY(-100px);
+    transform: scale(1.5) translateY(-75px);
 }
 
 #asideR img:hover {
-    width: auto;
-    transform: scale(1.5) translateX(100px) translateY(75px);
+    transform: scale(1.5) translateX(100px) translateY(100px);
     z-index: 1;
 }
 
